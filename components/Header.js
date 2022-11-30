@@ -12,7 +12,7 @@ export default function Header() {
       render: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("/public/HeaderAnimation"),
+      animationData: require("/public/HeaderAnimation.json"),
     });
   }, []);
 
