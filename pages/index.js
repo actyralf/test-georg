@@ -29,8 +29,6 @@ export default function HomePage() {
     return () => lottie.destroy();
   }, []);
 
-  console.log(require("/public/WiderrufAnimation.json"));
-
   return (
     <div>
       <StyledBody>
