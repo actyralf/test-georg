@@ -13,8 +13,9 @@ export default function HomePage() {
       render: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("/public/Testing.json"),
+      animationData: require("/public/BestellungAnimation.json"),
     });
+    return () => lottie.destroy();
   }, []);
 
   useEffect(() => {
@@ -25,6 +26,7 @@ export default function HomePage() {
       autoplay: true,
       animationData: require("/public/WiderrufAnimation.json"),
     });
+    return () => lottie.destroy();
   }, []);
 
   console.log(require("/public/WiderrufAnimation.json"));
