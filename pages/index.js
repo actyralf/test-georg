@@ -112,10 +112,3 @@ const Animation = styled.section`
 const StyledLink = styled(Link)`
   text-decoration: none;
 `;
-
-/* const BestellungContainer = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: flex-start;
-` */
