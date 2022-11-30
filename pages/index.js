@@ -13,7 +13,7 @@ export default function HomePage() {
       render: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("/public/BestellungAnimation.json"),
+      animationData: require("/public/Testing.json"),
     });
   }, []);
 
