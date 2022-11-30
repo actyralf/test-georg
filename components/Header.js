@@ -18,13 +18,13 @@ export default function Header() {
   }, []);
 
   return (
-    <Link href="/" style={{textDecoration: "none"}}>
+    <StyledLink href="/">
       <StyledHeader>
         <Styledh3>Taschen</Styledh3>
         <AnimationContainer ref={container}></AnimationContainer>
         <Styledh3>Anwalt</Styledh3>
       </StyledHeader>
-    </Link>
+    </StyledLink>
   );
 }
 
@@ -47,5 +47,9 @@ const StyledHeader = styled.div`
 `;
 
 const Styledh3 = styled.h3`
+  text-decoration: none;
+`;
+
+const StyledLink = styled(Link)`
   text-decoration: none;
 `;

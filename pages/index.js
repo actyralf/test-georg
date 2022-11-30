@@ -36,19 +36,19 @@ export default function HomePage() {
       <StyledBody>
         <h3>Wo drückt der Schuh?</h3>
 
-        <Link href="/bestellung" style={{textDecoration: "none"}}>
+        <StyledLink href="/bestellung">
           <StyledBestellungButton>
-            <BestellungAnimation ref={bestellungContainer} />
+            <Animation ref={bestellungContainer} />
             Online bestellen und kaufen
           </StyledBestellungButton>
-        </Link>
+        </StyledLink>
 
-        <Link href="/widerruf" style={{textDecoration: "none"}}>
+        <StyledLink href="/widerruf">
           <StyledWiderufButton>
-            <WiderrufAnimation ref={widerrufContainer} />
+            <Animation ref={widerrufContainer} />
             Widerruf und Retoure
           </StyledWiderufButton>
-        </Link>
+        </StyledLink>
       </StyledBody>
     </div>
   );
@@ -106,14 +106,13 @@ const StyledWiderufButton = styled.button`
   align-items: center;
 `;
 
-const BestellungAnimation = styled.section`
+const Animation = styled.section`
   width: 190px;
   height: 220px;
 `;
 
-const WiderrufAnimation = styled.section`
-  width: 190px;
-  height: 220px;
+const StyledLink = styled(Link)`
+  text-decoration: none;
 `;
 
 /* const BestellungContainer = styled.div`
