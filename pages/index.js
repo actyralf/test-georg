@@ -27,6 +27,8 @@ export default function HomePage() {
     });
   }, []);
 
+  console.log(require("../public/WiderrufAnimation"));
+
   return (
     <div>
       <StyledBody>
@@ -35,15 +37,14 @@ export default function HomePage() {
         <Link href="/bestellung" style={{textDecoration: "none"}}>
           <StyledBestellungButton>
             <BestellungAnimation
-              ref={bestellungContainer}
-            ></BestellungAnimation>
+              ref={bestellungContainer}/>
             Online bestellen und kaufen
           </StyledBestellungButton>
         </Link>
 
         <Link href="/widerruf" style={{textDecoration: "none"}}>
           <StyledWiderufButton>
-            <WiderrufAnimation ref={widerrufContainer}></WiderrufAnimation>
+            <WiderrufAnimation ref={widerrufContainer} />
             Widerruf und Retoure
           </StyledWiderufButton>
         </Link>
