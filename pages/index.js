@@ -36,8 +36,7 @@ export default function HomePage() {
 
         <Link href="/bestellung" style={{textDecoration: "none"}}>
           <StyledBestellungButton>
-            <BestellungAnimation
-              ref={bestellungContainer}/>
+            <BestellungAnimation ref={bestellungContainer} />
             Online bestellen und kaufen
           </StyledBestellungButton>
         </Link>
